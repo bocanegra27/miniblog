@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Posts</title>
+    <style>
+        body { font-family: sans-serif; margin: 2em; }
+        article { border-bottom: 1px solid #ccc; padding-bottom: 1em; margin-bottom: 1em; }
+        h2 { color: #333; }
+    </style>
+</head>
+<body>
+    <h1>Mi Blog</h1>
+    {% for post in posts %}
+        <article>
+            <h2>{{ post.title }}</h2>
+            <p>{{ post.content }}</p>
+        </article>
+    {% empty %}
+        <p>Aún no hay publicaciones en el blog.</p>
+    {% endfor %}
+</body>
+</html>
