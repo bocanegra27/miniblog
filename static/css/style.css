@@ -1,6 +1,28 @@
-body { font-family: sans-serif; margin: 2em; }
-article { border-bottom: 1px solid #ccc; padding-bottom: 1em; margin-bottom: 1em; }
-h2 { color: #333; }
-h1{
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 2em;
+}
+
+article {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+
+h2 {
+    color: #333;
+}
+
+h1 {
     color: blue;
+}
+
+.new-post-button {
+    display: inline-block;
+    margin-bottom: 2em;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
 }

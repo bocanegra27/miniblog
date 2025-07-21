@@ -1,20 +1,13 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <title>Lista de Posts</title>
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
-</head>
-<body>
-    <h1>Mi Blog</h1>
+{% extends 'posts/base.html' %}
+
+{% block content %}
+     
     {% for post in posts %}
         <article>
             <h2>{{ post.title }}</h2>
-            <p>{{ post.content }}</p>
+            <p>{{ post.content|linebreaksbr }}</p>
         </article>
     {% empty %}
         <p>Aún no hay publicaciones en el blog.</p>
     {% endfor %}
-</body>
-</html>
+{% endblock content %}
