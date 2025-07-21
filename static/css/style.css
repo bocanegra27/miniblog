@@ -10,11 +10,11 @@ article {
 }
 
 h2 {
-    color: #333;
+    color: #2ef738;
 }
 
 h1 {
-    color: blue;
+    color: #200fb9;
 }
 
 .new-post-button {
@@ -25,4 +25,9 @@ h1 {
     color: white;
     text-decoration: none;
     border-radius: 5px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
 }
